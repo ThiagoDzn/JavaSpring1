@@ -11,19 +11,19 @@ import java.util.Map;
 
 @SpringBootApplication
 @RestController
-public class DemoApplication {
+public class CatracasBackEndApplication {
 
     private static final Map<String, String> raToNameMap = new HashMap<>();
 
     static {
         
         raToNameMap.put("24304", "Thiago");
-        raToNameMap.put("654321", "Maria");
+        raToNameMap.put("6521", "Juliana");
         
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(CatracasBackEndApplication.class, args);
     }
 
     @GetMapping("/ra")
